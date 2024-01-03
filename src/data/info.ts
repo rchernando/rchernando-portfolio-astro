@@ -58,13 +58,13 @@ export const info = {
         linkedin: 'https://www.linkedin.com/in/roberto-hernando/',
     },
 
-    projects: [
-        {
-            title: 'Astro Portfolio',
-            isFeatured: true,
-            thumbnail: '/assets/images/astro-portfolio.png',
-            githubUrl: 'https://github.com/uzzii-21/astro-portfolio',
-            liveUrl: 'https://astro-portfolio-uzair.vercel.app/',
-        },
-    ],
+    // projects: [
+    //     {
+    //         title: 'Astro Portfolio',
+    //         isFeatured: true,
+    //         thumbnail: '/assets/images/astro-portfolio.png',
+    //         githubUrl: 'https://github.com/uzzii-21/astro-portfolio',
+    //         liveUrl: 'https://astro-portfolio-uzair.vercel.app/',
+    //     },
+    // ],
 };

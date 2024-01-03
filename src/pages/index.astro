@@ -8,12 +8,12 @@ import ProjectsWrapper from '@components/general/ProjectsWrapper.astro';
 import MetaHead from '@components/general/MetaHead.astro';
 import Technologies from '@components/home/Technologies.astro';
 
-const featureProjects = info.projects.reduce((accumulator, project) => {
-    if (accumulator.length < 6 && project.isFeatured) {
-        accumulator.push(project);
-    }
-    return accumulator;
-}, []);
+// const featureProjects = info.projects.reduce((accumulator, project) => {
+//     if (accumulator.length < 6 && project.isFeatured) {
+//         accumulator.push(project);
+//     }
+//     return accumulator;
+// }, []);
 ---
 
 <!DOCTYPE html>
