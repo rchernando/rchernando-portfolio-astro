@@ -1,0 +1,51 @@
+---
+import { info } from '@data';
+
+import Layout from '@layouts/Layout.astro';
+import Hero from '@components/home/Hero.astro';
+import Experience from '@components/home/Experience.astro';
+import ProjectsWrapper from '@components/general/ProjectsWrapper.astro';
+import MetaHead from '@components/general/MetaHead.astro';
+import Technologies from '@components/home/Technologies.astro';
+
+const featureProjects = info.projects.reduce((accumulator, project) => {
+    if (accumulator.length < 6 && project.isFeatured) {
+        accumulator.push(project);
+    }
+    return accumulator;
+}, []);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <MetaHead
+            title={'Portfolio'}
+            description={info.about}
+            ogImageUrl={'/assets/images/profile.png'}
+        />
+    </head>
+
+    <body>
+        <Layout>
+            <Hero
+                name={info.name}
+                about={info.about}
+            />
+
+            <Technologies title={'TECNOLOGÍAS'} />
+            <!-- <section>
+        <h2 class="w-[15rem] dark:text-light mt-16">Proyectos</h2>
+        <ProjectsWrapper projects={featureProjects} />
+      </section> -->
+            <Experience
+                title={'EXPERIENCIA'}
+                details={info.experience}
+            />
+            <Experience
+                title={'EDUCACIÓN'}
+                details={info.education}
+            />
+        </Layout>
+    </body>
+</html>
