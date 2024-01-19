@@ -6,6 +6,7 @@ import Hero from '@components/home/Hero.astro';
 import Experience from '@components/home/Experience.astro';
 import MetaHead from '@components/general/MetaHead.astro';
 import Technologies from '@components/home/Technologies.astro';
+import { inject } from '@vercel/analytics';
 
 // const featureProjects = info.projects.reduce((accumulator, project) => {
 //     if (accumulator.length < 6 && project.isFeatured) {
@@ -13,6 +14,8 @@ import Technologies from '@components/home/Technologies.astro';
 //     }
 //     return accumulator;
 // }, []);
+inject();
+
 ---
 
 <!DOCTYPE html>
