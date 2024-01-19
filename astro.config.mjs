@@ -7,7 +7,7 @@ import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astro-portfolio-uzair.vercel.app",
+  site: "https://astro-portfolio-rchernando.vercel.app",
   integrations: [
     tailwind(),
     sitemap({
