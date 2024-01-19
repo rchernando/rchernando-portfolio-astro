@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import robotsTxt from "astro-robots-txt";
 import sitemap from "@astrojs/sitemap";
+import { defineConfig } from 'astro/config';
+import vercel from '@astrojs/vercel/serverless';
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,4 +18,10 @@ export default defineConfig({
     }),
     robotsTxt(),
   ],
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
 });
