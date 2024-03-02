@@ -1,8 +1,8 @@
 export const info = {
-    baseUrl: 'https://astro-portfolio-uzair.vercel.app',
+    baseUrl: 'https://robertohernando.com',
     name: 'Roberto Hernando',
     jobDescription: 'Fullstack developer',
-    about: `Soy un desarrollador fullstack con más de 2 años de experiencia, especializado en JavaScript y Angular, trabajando con NestJS / ExpressJS.
+    about: `Soy un desarrollador fullstack con más de 3 años de experiencia, especializado en JavaScript y Angular, trabajando con NestJS / ExpressJS.
       En backend, tengo experiencia con NodeJS y Express para crear APIs REST. Manejo bases de datos como MySQL, MariaDB y GraphQL. Soy meticuloso en seguir las mejores prácticas y mantener un código impecable, con una perspectiva crítica tanto en 
       las características del producto como en la dinámica empresarial. ¡Estoy aquí para ayudar en lo que necesites!
     `,
@@ -28,6 +28,16 @@ export const info = {
                 `- Desarrollo web con HTML, CSS y JS modificando una API con Python`,
                 `- Desarrollo con diferentes versiones de Angular (11,14, 15.0 y 15.1)`,
                 `- Desarrollo web con JSP y MariaDB HTML/CSS/TS, Node.JS, PHP, MySQL`,
+            ],
+        },
+        {
+            name: 'Devploit',
+            location: 'Madrid, España',
+            startDate: 'Junio 2020',
+            endDate: 'Septiembre 2021',
+            description: [
+                `- Desarrollo web con React`,
+                `- Diseño y desarrollo de interfaces`,
             ],
         },
     ],
